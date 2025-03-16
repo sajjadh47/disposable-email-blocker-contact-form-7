@@ -1,11 +1,13 @@
 === Disposable Email Blocker - Contact Form 7 ===
-Contributors: sajjad67
 Tags: disposable-email-blocker, temporary-email-blocker, blocker, temporary-email, contact-form-7
+Contributors: sajjad67
+Author: Sajjad Hossain Sagor
+Tested up to: 6.7
 Requires at least: 5.6
-Tested up to: 6.6
-Stable tag: trunk
-License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 2.0.0
+Requires PHP: 8.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Now You Can Easily Block/Prevent Disposable/Temporary Spam Emails From Submitting on CF7 Form.
 
@@ -37,8 +39,8 @@ Go to Plugins > Add New.
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
 If successful, click Activate Plugin to activate it, or Return to Plugin Installer for further actions.
 
-To add a WordPress Plugin from github repo / plugin zip file :
-1. Go to wordpress plugin page
+To add a WordPress Plugin from GitHub repo / plugin zip file :
+1. Go to WordPress plugin page
 2. Click Add New & Upload Plugin
 3. Drag / Click upload the plugin zip file
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
@@ -46,7 +48,7 @@ If successful, click Activate Plugin to activate it, or Return to Plugin Install
 
 == Frequently Asked Questions ==
 = How to use this plugin? =
-Just after installing Disposable Email Blocker - Contact Form 7 plugin, create or edit existing contact form and according to screenshot enable filtering and edit message... then voila! yo're ready to go.
+Just after installing Disposable Email Blocker - Contact Form 7 plugin, create or edit existing contact form and according to screenshot enable filtering and edit message... then voila! you're ready to go.
 
 == Screenshots ==
 1. Message Screen When Disposable/Temporary Email Found
@@ -54,6 +56,8 @@ Just after installing Disposable Email Blocker - Contact Form 7 plugin, create o
 3. Enable/Disable Filtering
 
 == Changelog ==
+= 2.0.0 =
+- Major changes in codebase. Compatibility checkup for latest wp version 6.7
 = 1.0.3 =
 - Compatibility check for wp 6.6
 = 1.0.2 =

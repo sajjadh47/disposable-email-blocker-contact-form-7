@@ -1,10 +1,11 @@
 # Disposable Email Blocker - Contact Form 7
 
-**Contributors:** sajjad67 \
 **Tags:** disposable-email-blocker, temporary-email-blocker, blocker, temporary-email, contact-form-7 \
+**Contributors:** sajjad67 \
 **Requires at least:** 5.6 \
-**Tested up to:** 6.6 \
-**Stable tag:** trunk \
+**Tested up to:** 6.7 \
+**Stable tag:** 2.0.0 \
+**Requires PHP:** 8.0 \
 **License:** GPLv2 \
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,8 +42,8 @@ Go to Plugins > Add New.
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
 If successful, click Activate Plugin to activate it, or Return to Plugin Installer for further actions.
 
-To add a WordPress Plugin from github repo / plugin zip file :
-1. Go to wordpress plugin page
+To add a WordPress Plugin from Github repo / plugin zip file :
+1. Go to WordPress plugin page
 2. Click Add New & Upload Plugin
 3. Drag / Click upload the plugin zip file
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
@@ -70,6 +71,9 @@ Just after installing Disposable Email Blocker - Contact Form 7 plugin, create o
 
 
 ## Changelog
+
+### 2.0.0
+- Minor changes in codebase only.
 
 ### 1.0.3
 - Compatibility check for wp 6.6
