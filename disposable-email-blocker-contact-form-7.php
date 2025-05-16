@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The plugin bootstrap file
  *
@@ -8,28 +7,33 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @since             2.0.0
  * @package           Disposable_Email_Blocker_Contact_Form_7
+ * @author            Sajjad Hossain Sagor <sagorh672@gmail.com>
  *
  * Plugin Name:       Disposable Email Blocker - Contact Form 7
  * Plugin URI:        https://wordpress.org/plugins/disposable-email-blocker-contact-form-7/
  * Description:       Now You Can Easily Block/Prevent Disposable/Temporary Spam Emails From Submitting on CF7 Form.
- * Version:           2.0.0
+ * Version:           2.0.1
+ * Requires at least: 6.5
+ * Requires PHP:      8.0
  * Author:            Sajjad Hossain Sagor
  * Author URI:        https://sajjadhsagor.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       disposable-email-blocker-contact-form-7
  * Domain Path:       /languages
+ * Requires Plugins:  contact-form-7
  */
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) die;
+if ( ! defined( 'ABSPATH' ) ) {
+	die;
+}
 
 /**
  * Currently plugin version.
  */
-define( 'DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_VERSION', '2.0.0' );
+define( 'DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_VERSION', '2.0.1' );
 
 /**
  * Define Plugin Folders Path
@@ -40,46 +44,47 @@ define( 'DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_URL', plugin_dir_url( __
 
 define( 'DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 
-// Plugin database table name to add domains list
-define( 'DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_TABLE_NAME', 'disposable_domains' );
+// Plugin database table name.
+define( 'DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_TABLE_NAME', 'cf7_disposable_domains' );
+
+// Plugin db version.
+define( 'DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_DB_VERSION', '20251705' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-plugin-activator.php
- * 
+ * This action is documented in includes/class-disposable-email-blocker-contact-form-7-activator.php
+ *
  * @since    2.0.0
  */
-function activate_disposable_email_blocker_contact_form_7()
-{
-	require_once DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_PATH . 'includes/class-plugin-activator.php';
-	
-	Disposable_Email_Blocker_Contact_Form_7_Activator::activate();
+function on_activate_disposable_email_blocker_contact_form_7() {
+	require_once DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_PATH . 'includes/class-disposable-email-blocker-contact-form-7-activator.php';
+
+	Disposable_Email_Blocker_Contact_Form_7_Activator::on_activate();
 }
 
-register_activation_hook( __FILE__, 'activate_disposable_email_blocker_contact_form_7' );
+register_activation_hook( __FILE__, 'on_activate_disposable_email_blocker_contact_form_7' );
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-plugin-deactivator.php
- * 
+ * This action is documented in includes/class-disposable-email-blocker-contact-form-7-deactivator.php
+ *
  * @since    2.0.0
  */
-function deactivate_disposable_email_blocker_contact_form_7()
-{
-	require_once DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_PATH . 'includes/class-plugin-deactivator.php';
-	
-	Disposable_Email_Blocker_Contact_Form_7_Deactivator::deactivate();
+function on_deactivate_disposable_email_blocker_contact_form_7() {
+	require_once DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_PATH . 'includes/class-disposable-email-blocker-contact-form-7-deactivator.php';
+
+	Disposable_Email_Blocker_Contact_Form_7_Deactivator::on_deactivate();
 }
 
-register_deactivation_hook( __FILE__, 'deactivate_disposable_email_blocker_contact_form_7' );
+register_deactivation_hook( __FILE__, 'on_deactivate_disposable_email_blocker_contact_form_7' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
- * 
+ *
  * @since    2.0.0
  */
-require DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_PATH . 'includes/class-plugin.php';
+require DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_PATH . 'includes/class-disposable-email-blocker-contact-form-7.php';
 
 /**
  * Begins execution of the plugin.
@@ -90,10 +95,9 @@ require DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_PATH . 'includes/class-pl
  *
  * @since    2.0.0
  */
-function run_disposable_email_blocker_contact_form_7()
-{
+function run_disposable_email_blocker_contact_form_7() {
 	$plugin = new Disposable_Email_Blocker_Contact_Form_7();
-	
+
 	$plugin->run();
 }
 
