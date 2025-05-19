@@ -1,6 +1,6 @@
 <?php
 /**
- * This file contains the definition of the WP_Edit_Username_Admin class, which
+ * This file contains the definition of the Disposable_Email_Blocker_Contact_Form_7_Admin class, which
  * is used to load the plugin's admin-specific functionality.
  *
  * @package       Disposable_Email_Blocker_Contact_Form_7

@@ -73,11 +73,11 @@ class Disposable_Email_Blocker_Contact_Form_7_Public {
 	 * This function checks if the submitted email address belongs to a disposable
 	 * email domain and invalidates the form submission if it does.
 	 *
-	 * @since      2.0.0
-	 * @access     public
-	 * @param      WPCF7_Validation $result The current validation result.
-	 * @param      WPCF7_FormTag    $tag    The form tag object.
-	 * @return     WPCF7_Validation         The modified validation result.
+	 * @since     2.0.0
+	 * @access    public
+	 * @param     WPCF7_Validation $result The current validation result.
+	 * @param     WPCF7_FormTag    $tag    The form tag object.
+	 * @return    WPCF7_Validation         The modified validation result.
 	 */
 	public function validate_email( $result, $tag ) {
 		global $wpdb;
