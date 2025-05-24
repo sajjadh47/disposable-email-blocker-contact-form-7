@@ -1,5 +1,7 @@
 # Disposable Email Blocker - Contact Form 7
 
+[![Plugin Banner](https://ps.w.org/disposable-email-blocker-contact-form-7/assets/banner-772x250.png)](https://wordpress.org/plugins/disposable-email-blocker-contact-form-7/)
+
 **Tags:** disposable-email-blocker, temporary-email-blocker, blocker, temporary-email, contact-form-7 \
 **Tested up to:** 6.8 \
 **Requires PHP:** 8.0
