@@ -13,7 +13,7 @@
  * Plugin Name:       Disposable Email Blocker - Contact Form 7
  * Plugin URI:        https://wordpress.org/plugins/disposable-email-blocker-contact-form-7/
  * Description:       Now You Can Easily Block/Prevent Disposable/Temporary Spam Emails From Submitting on CF7 Form.
- * Version:           2.0.1
+ * Version:           2.0.2
  * Requires at least: 6.5
  * Requires PHP:      8.0
  * Author:            Sajjad Hossain Sagor
@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Currently plugin version.
  */
-define( 'DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_VERSION', '2.0.1' );
+define( 'DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_VERSION', '2.0.2' );
 
 /**
  * Define Plugin Folders Path

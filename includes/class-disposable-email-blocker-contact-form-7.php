@@ -11,8 +11,7 @@
 /**
  * The core plugin class.
  *
- * This is used to define internationalization, admin-specific hooks, and
- * public-facing hooks.
+ * This is used to define admin-specific hooks and public-facing hooks.
  *
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
@@ -52,7 +51,7 @@ class Disposable_Email_Blocker_Contact_Form_7 {
 	 * Define the core functionality of the plugin.
 	 *
 	 * Set the plugin name and the plugin version that can be used throughout the plugin.
-	 * Load the dependencies, define the locale, and set the hooks for the admin area and
+	 * Load the dependencies, set the hooks for the admin area and
 	 * the public-facing side of the site.
 	 *
 	 * @since     2.0.0
@@ -63,7 +62,6 @@ class Disposable_Email_Blocker_Contact_Form_7 {
 		$this->plugin_name = 'disposable-email-blocker-contact-form-7';
 
 		$this->load_dependencies();
-		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
 	}
@@ -74,7 +72,6 @@ class Disposable_Email_Blocker_Contact_Form_7 {
 	 * Include the following files that make up the plugin:
 	 *
 	 * - Disposable_Email_Blocker_Contact_Form_7_Loader. Orchestrates the hooks of the plugin.
-	 * - Disposable_Email_Blocker_Contact_Form_7_i18n.   Defines internationalization functionality.
 	 * - Disposable_Email_Blocker_Contact_Form_7_Admin.  Defines all hooks for the admin area.
 	 * - Disposable_Email_Blocker_Contact_Form_7_Public. Defines all hooks for the public side of the site.
 	 *
@@ -90,12 +87,6 @@ class Disposable_Email_Blocker_Contact_Form_7 {
 		 * core plugin.
 		 */
 		require_once DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_PATH . 'includes/class-disposable-email-blocker-contact-form-7-loader.php';
-
-		/**
-		 * The class responsible for defining internationalization functionality
-		 * of the plugin.
-		 */
-		require_once DISPOSABLE_EMAIL_BLOCKER_CONTACT_FORM_7_PLUGIN_PATH . 'includes/class-disposable-email-blocker-contact-form-7-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
@@ -172,8 +163,7 @@ class Disposable_Email_Blocker_Contact_Form_7 {
 	}
 
 	/**
-	 * The name of the plugin used to uniquely identify it within the context of
-	 * WordPress and to define internationalization functionality.
+	 * The name of the plugin used to uniquely identify it within the context of WordPress.
 	 *
 	 * @since     2.0.0
 	 * @access    public

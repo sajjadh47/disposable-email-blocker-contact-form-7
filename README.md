@@ -65,6 +65,9 @@ Just after installing Disposable Email Blocker - Contact Form 7 plugin, create o
 
 ## Changelog
 
+### 2.0.2
+- Fixed fatal error when uninstalling
+
 ### 2.0.1
 - Checked for latest wp version 6.8
 
