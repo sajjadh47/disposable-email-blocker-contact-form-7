@@ -14,7 +14,7 @@
  * Plugin URI:        https://wordpress.org/plugins/disposable-email-blocker-contact-form-7/
  * Description:       Now You Can Easily Block/Prevent Disposable/Temporary Spam Emails From Submitting on CF7 Form.
  * Version:           2.0.2
- * Requires at least: 6.5
+ * Requires at least: 5.6
  * Requires PHP:      8.0
  * Author:            Sajjad Hossain Sagor
  * Author URI:        https://sajjadhsagor.com/
