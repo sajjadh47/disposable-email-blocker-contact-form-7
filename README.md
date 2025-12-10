@@ -3,7 +3,7 @@
 [![Plugin Banner](https://ps.w.org/disposable-email-blocker-contact-form-7/assets/banner-772x250.png)](https://wordpress.org/plugins/disposable-email-blocker-contact-form-7/)
 
 **Tags:** disposable-email-blocker, temporary-email-blocker, blocker, temporary-email, contact-form-7 \
-**Tested up to:** 6.8 \
+**Tested up to:** 6.9 \
 **Requires PHP:** 8.0
 
 Now You Can Easily Block/Prevent Disposable/Temporary Spam Emails From Submitting on CF7 Form.
@@ -64,6 +64,9 @@ Just after installing Disposable Email Blocker - Contact Form 7 plugin, create o
 ![Enable/Disable Filtering](https://ps.w.org/disposable-email-blocker-contact-form-7/assets/screenshot-3.png)
 
 ## Changelog
+
+### 2.0.3
+- Compatibility checkup for latest wp version 6.9
 
 ### 2.0.2
 - Fixed fatal error when uninstalling

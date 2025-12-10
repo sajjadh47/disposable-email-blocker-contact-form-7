@@ -2,9 +2,9 @@
 Tags: disposable-email-blocker, temporary-email-blocker, blocker, temporary-email, contact-form-7
 Contributors: sajjad67
 Author: Sajjad Hossain Sagor
-Tested up to: 6.8
+Tested up to: 6.9
 Requires at least: 5.6
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -53,6 +53,8 @@ Just after installing Disposable Email Blocker - Contact Form 7 plugin, create o
 3. Enable/Disable Filtering
 
 == Changelog ==
+= 2.0.3 =
+- Compatibility checkup for latest wp version 6.9
 = 2.0.2 =
 - Fixed fatal error when uninstalling
 = 2.0.1 =
